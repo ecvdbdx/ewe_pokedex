@@ -23,8 +23,8 @@ function TrainedPokemon(props) {
         onChange={updateNickname}
         placeholder="Entrez un surnom"
       />
-      <div className="exp">{exp}</div>
-      <div className="weight">{weight} kg</div>
+      <div className="exp">Experience :{exp}</div>
+      <div className="weight">Poids : {weight} kg</div>
       {src && <img src={src} alt={name} />}
     </li>
   );

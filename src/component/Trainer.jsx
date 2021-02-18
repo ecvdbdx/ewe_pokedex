@@ -1,7 +1,7 @@
 import React from "react";
-import TrainedPokemon from "../classes/TrainedPokemon";
+import TrainedPokemon from "./TrainedPokemon";
 
-function Trainer({ name, address, caught }) {
+function Trainer({ name, address, caught, details }) {
   const trainedPokemons = caught.map((pokemon) => (
     <TrainedPokemon
       name={pokemon.name}
@@ -15,8 +15,8 @@ function Trainer({ name, address, caught }) {
     <div className="Trainer">
       <div className="name">{name}</div>
       <div className="address">{address}</div>
-
       <ul className="trained">{trainedPokemons}</ul>
+      <button className="details">{details}</button>
     </div>
   );
 }

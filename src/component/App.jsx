@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 
-import Trainer from "../functions/Trainer";
-import PokemonList from "../functions/PokemonList";
-import Filters from "../functions/Filters";
+import Trainer from "../component/Trainer";
+import PokemonList from "../component/PokemonList";
+import Filters from "../component/Filters";
 
 import fetchPokemons from "../utils/fetchPokemon";
 
